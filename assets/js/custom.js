@@ -634,7 +634,7 @@ const dsnParam = {
 
   function scrollBarWidth() {
     const scrollDiv = document.createElement("div");
-    scrollDiv.style.cssText = "width:100px;height:100px;overflow: scroll;position: absolute;top: -9999px;";
+    scrollDiv.style.min.cssText = "width:100px;height:100px;overflow: scroll;position: absolute;top: -9999px;";
     document.body.appendChild(scrollDiv);
     document.body.style.setProperty('--dsn-width-scroll', scrollDiv.offsetWidth - scrollDiv.clientWidth + "px");
     document.body.removeChild(scrollDiv);
